@@ -134,6 +134,7 @@ select{
     cursor: pointer;
     font-size: 25px;
 }
+
 div.new{
     display: grid;
     grid-template-rows: 358px 50px 55px 20px;
@@ -195,149 +196,151 @@ div.party:hover{
  option{
      cursor: pointer;
  }
-#imgone{
+ #imgone{
     width: 500px;
     height: 400px;
 }
 
-/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
-#icons, #cl-logo{
-    display: none;
-}
-@media screen and (min-width:350px) and (max-width:700px){
-    div.new {
+
+@media screen and (min-width:359px) and (max-width:700px) {
+    div.main{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
     div.sub-main{
-        padding-top: 53px;
+        display: inline-block;
+
     }
     #size{
-        width: 75px;
-        height: 75px;
+        margin-left: 61px;
+        width: 77px;
+        height: 77px;
     }
     div.clock{
-        margin-left: 420px;
+        margin-right: 230px;
     }
-    div.word{
-        margin-left: 90px;
-    }
-    div.row{
-        width: 320px;
-        height: 100px;
-        position: relative;
-        top: 190px;
-        right: 55px;
-    }
-    div.second{
-        top: 86px;
-        left: 22px;
-        width: 334px;
-    }
-    div.third{
-        top: 82px;
-        left: 40px;
-        width: 292px;
+    div.word {
+        padding-left: 20px;
+        font-size: 30px;
+        position: absolute;
+        top: 60px;
+    } 
 
+
+
+
+    div.box{
+        height: 68px;
+        width: 57px;
+        font-size: 20px;
+        padding: 3px;
+        margin: 5px;
     }
-    #imgone{
-        width: 360px;
-        height: 400px;
-    }
-    #name{
-        font-size: 23px;
-    }
-    div.card{
-        width: 358px;
-        height: 500px;
+    div.timebox{
+        width: 350px;
+        height: 100px;
         margin: auto;
         position: absolute;
-        top: 725px;
-        left: 5px;
-    }
-    div.party,#wish,.wake,.border{
-        display: none;
-    }
-    div.one{
-        margin-top:0px;
-        margin-left:0px;
-        position: relative;
-    }
-    #logo{
-        position: absolute;
-        top: 50px;
-        left: 25px;
-
-    }
-    #logo1{
-        position: absolute;
-        top: 17px;
-        left: 45%;
-    }
-    #logo2{
-        position: absolute;
-        top: 17px;
-        right: 25px;
-    }
-    #icons, #cl-logo{
-        margin-top: 10px;
-        padding-left: 30px;
-        font-size: 20px;
-        display: block;
-    }
-    #cl-logo{
-        color: white;
-        position: absolute;
-        top: 5px;
-        left: 23px;
-    }    
-    select{
-        position: absolute;
-        top: 156px;
-        left: 0px;
+        top: 146px;
+        left: 6px;
         right: 0px;
     }
-    #am{
-        margin-left: 40px;
-    }
-    #am1{
-        margin-left: 40px;
-        margin-top: 33px;
-
-    }
-    #am2{
-        margin-left: 40px;
-        margin-top: 96px;
+    #hours,#minutes, #seconds{
+        padding-top: 5px;
+        font-size: 30px;
     }
     #time{
         font-size: 15px;
     }
     #meri{
-        margin-top: 14px;
+        margin-top: 20px;
         margin-left: -3px;
+    }
+    div.second{
+        top: 86px;
+        left: 19px;
+        width: 313px;
+    }
+    div.third{
+        top: 82px;
+        left: 40px;
+        width: 270px;
+    }
+
+
+
+
+    div.new{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 202px;
 
     }
-    div.box{
-        height: 68px;
-        width: 49px;
-        font-size: 20px;
-        padding: 11px;
+    #logo,#logo1,#logo2{
+        font-size: 19px;
     }
-    div.timebox{
-        width: 374px;
-        height: 100px;
-        margin: auto;
-        position: absolute;
-        top: 180px;
-        left: 6px;
-        right: 0px;
+    .row{
+        height: 225px;
+        width: 323px;
+        margin-right: 157px;
     }
-    option{
-        display: inline;
-        position: absolute;
-        top: 0px;
+
+    .one {
+        margin-left: 0px;
+        margin-top: 20px;
     }
+
+    div.border{
+        height: 30px;
+        margin-top: 10px;
+    }
+    #am{
+        margin-left: 20px;
+    }
+    #am1{
+        margin-left: 39px;
+    }
+    #am2{
+        margin-left: 58px;
+    }
+    select {
+        padding: 0px;
+        height: 24px;
+        width: 129px;
+        font-size: 13px;
+    }
+    div.wake{
+        font-size: 17px;
+        margin-left: 10px;
+    }
+
+    /* //////////////////////////////////// */
+    .card{
+        width: 342px;
+        margin-right: 155px;
+    }
+    #imgone{
+        width: 336px;
+        height: 400px;
+    }
+    #name{
+        font-size: 25px;
+    }
+
+
+    div.party{
+        margin-right: 165px;
+        width: 221px;
+    }
+    
+    #wish{
+        width: 309px;
+        margin-right: 150px;
+    }
+
 }
