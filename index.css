@@ -125,16 +125,38 @@ div.one{
     margin-left: 114px; 
 }
 
-
-select{
+.choose{
+    position: relative;
+}
+.choose select{
     padding: 5px 30px;
     border-radius: 5px;
     text-align: center;
     color: #3d087b;
     cursor: pointer;
     font-size: 25px;
+    appearance: none;
+    -webkit-appearance: none;
 }
+.choose:after{
+    content: "";
+    position: absolute;
+    top: 354px;
+    right: 11px;
+    left: 254px;
+    margin-top: -336px;
+    border-top: 8px solid purple;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    pointer-events: none;
+}
+.h1:after{
+    left: 292px;
 
+}
+.h2:after{
+    left: 325px;
+}
 div.new{
     display: grid;
     grid-template-rows: 358px 50px 55px 20px;
@@ -308,12 +330,28 @@ div.party:hover{
     #am2{
         margin-left: 58px;
     }
-    select {
-        padding: 0px;
+    .choose select {
+        padding-left: 18px;
         height: 24px;
         width: 129px;
-        font-size: 13px;
+        font-size: 11px;
     }
+    .choose:after{
+        position: absolute;
+        top: 347px;
+        left: 129px;
+        border-top: 5px solid purple;
+        border-left: 4px solid transparent;
+        border-right: 4px solid transparent;
+    
+    }
+    .h1:after{
+        left: 150px;
+    }
+    .h2:after{
+        left: 168px;
+    }
+
     div.wake{
         font-size: 17px;
         margin-left: 10px;
@@ -338,9 +376,10 @@ div.party:hover{
         width: 221px;
     }
     
-    #wish{
+    div#wish{
         width: 309px;
         margin-right: 150px;
+        font-size: 20px;
     }
 
 }

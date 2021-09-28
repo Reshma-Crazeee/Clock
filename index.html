@@ -53,12 +53,16 @@
                 <div class="one">
                     <i class="fa-solid fa-sun-bright fa-2x" id="logo"></i>
                     <div class="wake">Set wake up time</div>
-                    <select name="am" id="am" onclick="morning()">
+                    <div class="choose">
+                        <select name="am" id="am" onclick="morning()">
+                        <option selected disabled>Choose Time</option>
+                        <option value="AM">07 AM - 08 AM</option>
                         <option value="AM">08 AM - 09 AM</option>
                         <option value="AM">09 AM - 10 AM</option>
                         <option value="AM">10 AM - 11 AM</option>
                         <option value="PM">11 AM - 12 PM</option>
-                    </select>
+                        </select>
+                    </div>
                 </div>
                 
                 <div class="border"></div>
@@ -66,12 +70,17 @@
                 <div class="one">
                     <i class="fa-solid fa-fork-knife fa-2x" id="logo1"></i>
                     <div class="wake">Set lunch time</div>
-                    <select name="am" id="am1" onclick="noon()">
-                        <option value="PM">12 PM - 01 PM</option>
-                        <option value="PM">01 PM - 02 PM</option>
-                        <option value="PM">02 PM - 03 PM</option>
-                        <option value="PM">03 PM - 04 PM</option>
-                    </select>
+                    <div class="choose h1">
+                        <select name="am" id="am1" onclick="noon()">
+                            <option selected disabled>Choose Time</option>
+                            <option value="PM">12 PM - 01 PM</option>
+                            <option value="PM">01 PM - 02 PM</option>
+                            <option value="PM">02 PM - 03 PM</option>
+                            <option value="PM">03 PM - 04 PM</option>
+                            <option value="PM">03 PM - 04 PM</option>
+                            <option value="PM">05 PM - 06 PM</option>
+                        </select>
+                    </div>
                 </div>
                 
                 <div class="border"></div>
@@ -79,12 +88,15 @@
                 <div class="one">
                     <i class="fa-solid fa-snooze fa-2x" id="logo2"></i>
                     <div class="wake">Set nap time</div>
-                    <select name="am" id="am2" onclick="night()">
-                        <option value="PM">08 PM - 09 PM</option>
-                        <option value="PM">09 PM - 10 PM</option>
-                        <option value="PM">10 PM - 11 PM</option>
-                        <option value="AM">11 PM - 12 AM</option>
-                    </select>
+                    <div class="choose h2">
+                        <select name="am" id="am2" onclick="night()">
+                            <option selected disabled>Choose Time</option>
+                            <option value="PM">08 PM - 09 PM</option>
+                            <option value="PM">09 PM - 10 PM</option>
+                            <option value="PM">10 PM - 11 PM</option>
+                            <option value="AM">11 PM - 12 AM</option>
+                        </select>
+                    </div>
                 </div>
             </div>
             
